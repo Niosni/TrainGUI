@@ -1,0 +1,11 @@
+<div *ngIf="train">
+
+    <h2>{{ train.orig | uppercase }} - {{ train.dest | uppercase }} Details</h2>
+    <div><span> Time of departure: </span>{{train.dept}} <br> Time of arrival: {{train.arri}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="train.dest" placeholder="name">
+      </label>
+    </div>
+  
+  </div>
